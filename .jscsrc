@@ -1,0 +1,6 @@
+{
+	"preset": "airbnb",
+    "validateIndentation": 4,
+    disallowMultipleVarDecl: { allExcept: ['require', 'undefined'] },
+    maximumLineLength: 200
+}

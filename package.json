@@ -1,0 +1,45 @@
+{
+  "name": "img-spritesmith",
+  "version": "1.1.0",
+  "description": "将一组图片转换 sprite 和 css、less、stylus、sass、scss",
+  "main": "spritesmith.new.js",
+  "dependencies": {
+    "fs-extra": "^3.0.1",
+    "spritesheet-templates": "^10.2.1",
+    "spritesmith": "^3.1.1"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^2.0.0",
+    "glob": "^7.1.1",
+    "husky": "^0.13.3",
+    "validate-commit-msg": "^2.11.2"
+  },
+  "scripts": {
+    "examples": "node examples/example.js"
+  },
+  "keywords": [
+    "img-spritesmith",
+    "css-spritesmith",
+    "spritesmith",
+    "sprite",
+    "spritesheet"
+  ],
+  "author": "Roc",
+  "license": "ISC",
+  "directories": {
+    "example": "examples"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rochappy/img-spritesmith.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rochappy/img-spritesmith/issues"
+  },
+  "homepage": "https://github.com/rochappy/img-spritesmith#readme",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
