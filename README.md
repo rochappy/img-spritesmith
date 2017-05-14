@@ -1,14 +1,18 @@
-将一组图片转换 sprites 和 css, less, stylus, sass, scss
+# Overview
 
-简化版 [gulp-spritesmith]，针对移动端自动使用 retina 2倍图
+Convert a set of images into a spritesheet and CSS variables
 
-[gulp-spritesmith]: https://github.com/twolfson/gulp.spritesmith
-[spritesmith]: https://github.com/Ensighten/spritesmith
+lite [gulp-spritesmith], For the mobile side automatically use retina
 
-# 入门
-安装模块，`npm install img-spritesmith`
+# Installation
+
+run `npm install img-spritesmith`
+
+# Use
 
 ```js
+sprites = require('img-spritesmith')
+
 sprites({
     images: ['a.png', 'b.png'],
     imgName: 'logo.png',
@@ -22,34 +26,37 @@ sprites({
 });
 ```
 
-# 文档
+# Documentation
 
 - **params** `Object`
-    - **images:** `Array` 输入图片路径
-    
-    - **imgDest:** `String` 输出图片路径
+    - **images:** `Array` entry images files
+
+    - **imgDest:** `String` output images path
 
         Default: `'./dist/sprite/'`
-    
-    - **cssDest:** `String` 输出样式路径
+
+    - **cssDest:** `String` output css path
 
         Default: `'./dist/sprite/'`
-    
-    - **imgName:** `String` 输出图片名称
+
+    - **imgName:** `String` output images name
 
         Default: `'sprites.png'`
-    
-    - **cssName:** `String` 输出样式名称
+
+    - **cssName:** `String` output css path
 
         Default: `'sprites.css'`
-    
-    - **padding:** `Number` 图片间间隔
+
+    - **padding:** `Number` spacing between images for [spritesmith documentation]
 
         Default: `4`
-    
-    - **cssOpts:** `Object`
+    - **cssSpritesheetName** `String` Prefix to use for all spritesheet variables for [spritesheet-templates documentation]
+
+        Default: ``
+
+    - **cssOpts:** `Object` Options to pass through to the formatter
         + **functions:** `Boolean`
-        + **variableNameTransforms:** 转换变量格式
+        + **variableNameTransforms:**
 
         Defaults:
 
@@ -57,8 +64,14 @@ sprites({
         functions: true,
         variableNameTransforms: ''
         ```
-    - 其余与 spritesmith 保持一致
+    - Other parameters for [spritesmith documentation]
 
 
-- 返回值 `Promise`
+- **return** `Promise`
+
+
+[gulp-spritesmith]: https://github.com/twolfson/gulp.spritesmith
+[spritesmith]: https://github.com/Ensighten/spritesmith
+[spritesmith documentation]: https://github.com/Ensighten/spritesmith#documentation
+ [spritesheet-templates documentation]: https://github.com/twolfson/spritesheet-templates#documentation
 

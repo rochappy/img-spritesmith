@@ -1,5 +1,7 @@
-// 参考：https://github.com/twolfson/gulp.spritesmith
-// 参考：https://github.com/twolfson/spritesheet-templates
+/*
+reference:  https://github.com/twolfson/gulp.spritesmith
+reference:  https://github.com/twolfson/spritesheet-templates
+ */
 
 var fs = require('fs-extra');
 var assert = require('assert');

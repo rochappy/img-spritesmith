@@ -1,8 +1,7 @@
 {
   "name": "img-spritesmith",
-  "version": "1.1.0",
-  "description": "将一组图片转换 sprite 和 css、less、stylus、sass、scss",
-  "main": "spritesmith.new.js",
+  "version": "1.1.1",
+  "description": "Convert a set of images into a spritesheet and CSS variables",
   "dependencies": {
     "fs-extra": "^3.0.1",
     "spritesheet-templates": "^10.2.1",
@@ -12,10 +11,13 @@
     "cz-conventional-changelog": "^2.0.0",
     "glob": "^7.1.1",
     "husky": "^0.13.3",
+    "jscs": "^3.0.7",
     "validate-commit-msg": "^2.11.2"
   },
   "scripts": {
-    "examples": "node examples/example.js"
+    "examples": "node examples/example.js",
+    "commitmsg": "validate-commit-msg",
+    "jscs": "jscs index.js"
   },
   "keywords": [
     "img-spritesmith",
